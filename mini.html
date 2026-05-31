@@ -3,146 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Buy the Leo Mini — pocket-sized power. Choose your color and configuration." />
+  <meta name="description" content="Buy the Leo Mini — a 15cm faceted portable speaker. Choose your finish, configuration, engraving, and more." />
   <title>Leo Mini — Leo's Speakers</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500&family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav" id="top">
-    <div class="container nav__inner">
-      <a href="index.html" class="brand">
-        <span class="brand__dot brand__dot--blue"></span>
-        <span class="brand__dot brand__dot--red"></span>
-        <span class="brand__dot brand__dot--yellow"></span>
-        <span class="brand__dot brand__dot--green"></span>
-        <span class="brand__name">Leo's Speakers</span>
-      </a>
+  <header class="nav">
+    <div class="container--wide container nav__inner">
+      <a href="index.html" class="brand"><span class="brand__mark"></span> Leo's Speakers</a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="mini.html">Mini</a>
-        <a href="pro.html">Pro</a>
-        <a href="max.html">Max</a>
-        <a href="index.html#compare">Compare</a>
+        <a href="mini.html">Mini</a><a href="pro.html">Pro</a><a href="max.html">Max</a><a href="index.html#compare">Compare</a>
       </nav>
-      <a href="index.html#lineup" class="btn btn--solid nav__cta">Shop</a>
+      <a href="cart.html" class="nav__bag" aria-label="Bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="bag-count" id="bag-count">0</span>
+      </a>
     </div>
   </header>
 
-  <main class="product container"
-        data-product="Leo Mini"
-        data-base="89">
-    <p class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#lineup">Speakers</a> / Leo Mini</p>
-
-    <div class="product__grid">
-      <!-- Gallery -->
-      <div class="gallery">
-        <div class="gallery__stage" id="stage" style="background:#e8f0fe;">
-          <div class="gallery__device" style="width:150px;height:190px;"><div class="device__grille"></div><div class="device__top"><span class="device__led"></span></div></div>
-        </div>
-      </div>
-
-      <!-- Buy box -->
-      <div class="buybox">
-        <h1>Leo Mini</h1>
-        <p class="buybox__tag">Pocket-sized power.</p>
-        <p class="buybox__desc">The smallest speaker Leo makes, and a giant on sound. Toss it in a bag and bring punchy, room-filling audio anywhere — up to 18 hours on a charge.</p>
-
-        <!-- Color -->
-        <div class="opt">
-          <p class="opt__label">Color <span id="sel-color">Glacier Blue</span></p>
-          <div class="swatches" id="colors" role="group" aria-label="Color">
-            <button class="swatch" style="background:#aecbfa;" data-name="Glacier Blue" data-stage="#e8f0fe" aria-pressed="true" aria-label="Glacier Blue"></button>
-            <button class="swatch" style="background:#f6aea9;" data-name="Coral" data-stage="#fce8e6" aria-pressed="false" aria-label="Coral"></button>
-            <button class="swatch" style="background:#fdd663;" data-name="Lemon" data-stage="#fef7e0" aria-pressed="false" aria-label="Lemon"></button>
-            <button class="swatch" style="background:#202124;" data-name="Charcoal" data-stage="#f1f3f4" aria-pressed="false" aria-label="Charcoal"></button>
-          </div>
-        </div>
-
-        <!-- Configuration -->
-        <div class="opt">
-          <p class="opt__label">Configuration</p>
-          <div class="choices" id="configs" role="group" aria-label="Configuration">
-            <button class="choice" data-name="Single" data-price="0" aria-pressed="true">
-              <span><span class="choice__name">Single speaker</span><br /><span class="choice__sub">One Leo Mini</span></span>
-              <span class="choice__price">Included</span>
-            </button>
-            <button class="choice" data-name="Stereo pair" data-price="79" aria-pressed="false">
-              <span><span class="choice__name">Stereo pair</span><br /><span class="choice__sub">Two for true left/right stereo</span></span>
-              <span class="choice__price">+$79</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Add-ons -->
-        <div class="opt">
-          <p class="opt__label">Add-ons</p>
-          <div class="choices" id="addons" role="group" aria-label="Add-ons" data-multi="true">
-            <button class="choice" data-name="Travel case" data-price="19" aria-pressed="false">
-              <span><span class="choice__name">Travel case</span><br /><span class="choice__sub">Hard shell, water-resistant</span></span>
-              <span class="choice__price">+$19</span>
-            </button>
-            <button class="choice" data-name="2-yr+ care" data-price="29" aria-pressed="false">
-              <span><span class="choice__name">Leo Care+</span><br /><span class="choice__sub">Extends warranty to 3 years</span></span>
-              <span class="choice__price">+$29</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Quantity -->
-        <div class="opt">
-          <p class="opt__label">Quantity</p>
-          <div class="qty" id="qty">
-            <button type="button" data-step="-1" aria-label="Decrease quantity">−</button>
-            <input type="number" id="qty-input" value="1" min="1" max="10" aria-label="Quantity" />
-            <button type="button" data-step="1" aria-label="Increase quantity">+</button>
-          </div>
-        </div>
-
-        <!-- Summary -->
-        <div class="summary">
-          <p class="summary__sel" id="summary-sel"></p>
-          <div class="summary__row">
-            <span>Total</span>
-            <span class="summary__total" id="total">$89</span>
-          </div>
-          <div class="buybox__actions">
-            <button class="btn btn--solid btn--block" id="buy">Add to cart</button>
-          </div>
-          <p class="buybox__note">🚚 Free shipping · 60-day trial · 2-year warranty</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Highlights -->
-    <section class="highlights">
-      <h2>Why you'll love the Mini</h2>
-      <div class="highlights__grid">
-        <div class="highlight"><h3>Truly pocketable</h3><p>Under 12 oz with a built-in strap loop. Clip it on and go.</p></div>
-        <div class="highlight"><h3>18-hour battery</h3><p>All-day play, fast USB-C charging when you need a boost.</p></div>
-        <div class="highlight"><h3>IP67 waterproof</h3><p>Rain, pool, sand — the Mini shrugs it all off.</p></div>
-      </div>
-    </section>
-  </main>
+  <main class="pdp" data-model="mini"><!-- built by product.js --></main>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <a href="index.html" class="brand">
-          <span class="brand__dot brand__dot--blue"></span><span class="brand__dot brand__dot--red"></span><span class="brand__dot brand__dot--yellow"></span><span class="brand__dot brand__dot--green"></span>
-          <span class="brand__name">Leo's Speakers</span>
-        </a>
-        <p class="footer__tag">Sound, beautifully engineered.</p>
-      </div>
+    <div class="container--wide container footer__inner">
+      <div><a href="index.html" class="brand"><span class="brand__mark"></span> Leo's Speakers</a><p style="margin-top:0.6rem;">Sound, sculpted.</p></div>
       <nav class="footer__links" aria-label="Footer">
-        <a href="mini.html">Leo Mini</a><a href="pro.html">Leo Pro</a><a href="max.html">Leo Max</a><a href="index.html#compare">Compare</a>
+        <a href="mini.html">Leo Mini</a><a href="pro.html">Leo Pro</a><a href="max.html">Leo Max</a><a href="index.html#compare">Compare</a><a href="cart.html">Bag</a>
       </nav>
     </div>
-    <div class="container footer__copy">© <span id="year"></span> Leo's Speakers. Free shipping · 60-day trial · 2-year warranty.</div>
+    <div class="container--wide container footer__legal">© <span id="year"></span> Leo's Speakers. Free shipping · 60-day returns · 2-year warranty. Demo store.</div>
   </footer>
 
-  <div class="toast" id="toast"></div>
-  <script src="script.js"></script>
+  <script src="catalog.js"></script>
+  <script src="product.js"></script>
 </body>
 </html>

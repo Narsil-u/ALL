@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Buy the Leo Pro — a 35cm faceted home system. Choose your finish, configuration, engraving, and more." />
-  <title>Leo Pro — Leo's Speakers</title>
+  <meta name="description" content="Your Leo's Speakers bag." />
+  <title>Bag — Leo's Speakers</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -21,7 +21,13 @@
     </div>
   </header>
 
-  <main class="pdp" data-model="pro"><!-- built by product.js --></main>
+  <main class="bag" data-page="cart">
+    <div class="container--wide container">
+      <h1 class="bag__title">Your Bag</h1>
+      <p class="bag__sub">Free shipping and free engraving on every order.</p>
+      <div id="bag-body"><!-- built by cart.js --></div>
+    </div>
+  </main>
 
   <footer class="footer">
     <div class="container--wide container footer__inner">
@@ -34,6 +40,6 @@
   </footer>
 
   <script src="catalog.js"></script>
-  <script src="product.js"></script>
+  <script src="cart.js"></script>
 </body>
 </html>

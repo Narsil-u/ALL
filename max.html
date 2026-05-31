@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Buy the Leo Max — concert in a box. Choose your color, configuration, and add-ons." />
+  <title>Leo Max — Leo's Speakers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@400;500&family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand">
+        <span class="brand__dot brand__dot--blue"></span>
+        <span class="brand__dot brand__dot--red"></span>
+        <span class="brand__dot brand__dot--yellow"></span>
+        <span class="brand__dot brand__dot--green"></span>
+        <span class="brand__name">Leo's Speakers</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="mini.html">Mini</a>
+        <a href="pro.html">Pro</a>
+        <a href="max.html">Max</a>
+        <a href="index.html#compare">Compare</a>
+      </nav>
+      <a href="index.html#lineup" class="btn btn--solid nav__cta">Shop</a>
+    </div>
+  </header>
+
+  <main class="product container"
+        data-product="Leo Max"
+        data-base="349">
+    <p class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#lineup">Speakers</a> / Leo Max</p>
+
+    <div class="product__grid">
+      <div class="gallery">
+        <div class="gallery__stage" id="stage" style="background:#e6f4ea;">
+          <div class="gallery__device" style="width:200px;height:260px;"><div class="device__grille"></div><div class="device__top"><span class="device__led"></span></div></div>
+        </div>
+      </div>
+
+      <div class="buybox">
+        <h1>Leo Max</h1>
+        <p class="buybox__tag">Concert in a box.</p>
+        <p class="buybox__desc">Floor-shaking output with a dedicated subwoofer and a 40-hour battery. Built for big rooms, backyards, and bigger parties — when you want it loud and clean.</p>
+
+        <div class="opt">
+          <p class="opt__label">Color <span id="sel-color">Sage</span></p>
+          <div class="swatches" id="colors" role="group" aria-label="Color">
+            <button class="swatch" style="background:#a8dab5;" data-name="Sage" data-stage="#e6f4ea" aria-pressed="true" aria-label="Sage"></button>
+            <button class="swatch" style="background:#aecbfa;" data-name="Glacier Blue" data-stage="#e8f0fe" aria-pressed="false" aria-label="Glacier Blue"></button>
+            <button class="swatch" style="background:#fdd663;" data-name="Lemon" data-stage="#fef7e0" aria-pressed="false" aria-label="Lemon"></button>
+            <button class="swatch" style="background:#202124;" data-name="Charcoal" data-stage="#f1f3f4" aria-pressed="false" aria-label="Charcoal"></button>
+          </div>
+        </div>
+
+        <div class="opt">
+          <p class="opt__label">Configuration</p>
+          <div class="choices" id="configs" role="group" aria-label="Configuration">
+            <button class="choice" data-name="Single" data-price="0" aria-pressed="true">
+              <span><span class="choice__name">Single speaker</span><br /><span class="choice__sub">One Leo Max</span></span>
+              <span class="choice__price">Included</span>
+            </button>
+            <button class="choice" data-name="Stereo pair" data-price="329" aria-pressed="false">
+              <span><span class="choice__name">Stereo pair</span><br /><span class="choice__sub">Two for wall-to-wall stereo</span></span>
+              <span class="choice__price">+$329</span>
+            </button>
+            <button class="choice" data-name="Stage stack" data-price="699" aria-pressed="false">
+              <span><span class="choice__name">Stage stack</span><br /><span class="choice__sub">Three Maxes, synced loud</span></span>
+              <span class="choice__price">+$699</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="opt">
+          <p class="opt__label">Add-ons</p>
+          <div class="choices" id="addons" role="group" aria-label="Add-ons" data-multi="true">
+            <button class="choice" data-name="Rolling case" data-price="59" aria-pressed="false">
+              <span><span class="choice__name">Rolling case</span><br /><span class="choice__sub">Wheeled, tour-grade protection</span></span>
+              <span class="choice__price">+$59</span>
+            </button>
+            <button class="choice" data-name="Speaker stand" data-price="49" aria-pressed="false">
+              <span><span class="choice__name">Speaker stand</span><br /><span class="choice__sub">Adjustable height tripod</span></span>
+              <span class="choice__price">+$49</span>
+            </button>
+            <button class="choice" data-name="Leo Care+" data-price="59" aria-pressed="false">
+              <span><span class="choice__name">Leo Care+</span><br /><span class="choice__sub">Extends warranty to 3 years</span></span>
+              <span class="choice__price">+$59</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="opt">
+          <p class="opt__label">Quantity</p>
+          <div class="qty" id="qty">
+            <button type="button" data-step="-1" aria-label="Decrease quantity">−</button>
+            <input type="number" id="qty-input" value="1" min="1" max="10" aria-label="Quantity" />
+            <button type="button" data-step="1" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+
+        <div class="summary">
+          <p class="summary__sel" id="summary-sel"></p>
+          <div class="summary__row">
+            <span>Total</span>
+            <span class="summary__total" id="total">$349</span>
+          </div>
+          <div class="buybox__actions">
+            <button class="btn btn--solid btn--block" id="buy">Add to cart</button>
+          </div>
+          <p class="buybox__note">🚚 Free shipping · 60-day trial · 2-year warranty</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="highlights">
+      <h2>Why you'll love the Max</h2>
+      <div class="highlights__grid">
+        <div class="highlight"><h3>110 dB, distortion-free</h3><p>A dedicated subwoofer brings chest-thumping bass that stays clean at volume.</p></div>
+        <div class="highlight"><h3>40-hour battery</h3><p>The longest-lasting Leo. Power the whole party and then some.</p></div>
+        <div class="highlight"><h3>Goes anywhere</h3><p>IP67 rugged with a built-in handle, ready for the backyard or the beach.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="brand">
+          <span class="brand__dot brand__dot--blue"></span><span class="brand__dot brand__dot--red"></span><span class="brand__dot brand__dot--yellow"></span><span class="brand__dot brand__dot--green"></span>
+          <span class="brand__name">Leo's Speakers</span>
+        </a>
+        <p class="footer__tag">Sound, beautifully engineered.</p>
+      </div>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="mini.html">Leo Mini</a><a href="pro.html">Leo Pro</a><a href="max.html">Leo Max</a><a href="index.html#compare">Compare</a>
+      </nav>
+    </div>
+    <div class="container footer__copy">© <span id="year"></span> Leo's Speakers. Free shipping · 60-day trial · 2-year warranty.</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

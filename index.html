@@ -8,21 +8,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="container--wide container nav__inner">
-      <a href="index.html" class="brand"><span class="brand__mark"></span> Leo's Speakers</a>
-      <nav class="nav__links" aria-label="Primary">
-        <a href="mini.html">Mini</a>
-        <a href="pro.html">Pro</a>
-        <a href="max.html">Max</a>
-        <a href="#compare">Compare</a>
-      </nav>
-      <a href="cart.html" class="nav__bag" aria-label="Bag">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
-        <span class="bag-count" id="bag-count">0</span>
-      </a>
-    </div>
-  </header>
+  <div id="leo-nav"><!-- Apple-style global nav, built by nav.js --></div>
 
   <!-- Hero -->
   <section class="hero">
@@ -144,5 +130,6 @@
   </footer>
 
   <script src="catalog.js"></script>
+  <script src="nav.js"></script>
 </body>
 </html>
